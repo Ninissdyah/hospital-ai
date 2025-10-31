@@ -22,31 +22,41 @@ Runtime: Python 3.13.2
 
 1. Clone the repository:
 
+```bash
 git clone https://github.com/Ninissdyah/hospital-ai.git
+```
 
 2. Create a Virtual Environment:
 
-python -m venv venv
-venv\Scripts\activate (activate the Environment for windows)
-
+```bash
+python -m venv hospital-ai
+.\hospital\Scripts\activate # Activate the Environment for windows
+```
 3. Install Dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
 4. Create a file named .env in the project root directory and add your Google Gemini API key:
 
-GOOGLE_API_KEY=your_google_ai_studio_api_key_here
+`GOOGLE_API_KEY=your_google_ai_studio_api_key_here`
 
 5. Run the FastAPI Server:
 
-cd venv
+```bash
+cd hospital-ai
 uvicorn app.main:app --reload
+```
 
 6. Test the API:
 
 open your browser and visit the link: http://127.0.0.1:8000/docs
 OR
-run in another terminal: python app/test.py
+run in another terminal: 
+```bash
+python app/test.py
+```
 
 
 
